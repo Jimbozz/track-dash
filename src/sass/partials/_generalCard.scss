@@ -1,0 +1,47 @@
+.cardItem {
+  padding: 2rem;
+  border: 1px solid black;
+  /* height: 4rem; */
+  list-style: none;
+  background-color: white;
+  /* flex: 1; */
+  border-radius: 1rem;
+}
+
+.cardItem::before {
+  content: "";
+  width: 100%;
+  height: 21px;
+  padding: 1rem;
+  background-color: green;
+}
+
+.work {
+  background-color: var(--work);
+  background-image: url(../../images/icon-work.svg);
+}
+
+.play {
+  background-color: var(--soft-blue);
+  background-image: url(../../images/icon-play.svg);
+}
+
+.study {
+  background-color: var(--light-red);
+  background-image: url(../../images/icon-study.svg);
+}
+
+.exercise {
+  background-color: var(--lime-green);
+  background-image: url(../../images/icon-exercise.svg);
+}
+
+.social {
+  background-color: var(--violet);
+  background-image: url(../../images/icon-social.svg);
+}
+
+.self-care {
+  background-color: var(--soft-orange);
+  background-image: url(../../images/icon-self-care.svg);
+}
