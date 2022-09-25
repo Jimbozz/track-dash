@@ -1,19 +1,19 @@
-import React from "react";
 import { Link } from "react-router-dom";
+import userImage from "../../images/image-jeremy.png";
 
 function MainNavigation() {
   return (
     <div className="userContainer">
       <div className="userContainer-content">
         <div className="userContainer-content__image">
-          <img src={require("../../images/image-jeremy.png")} alt="man" />
+          <img src={userImage} alt="man" />
         </div>
         <div className="userContainer-content__info">
           <span>Report for</span>
           <h1>Jeremy Robson</h1>
         </div>
       </div>
-      <nav>
+      <nav className="userContainer-nav">
         <ul>
           <li>
             <Link to="/">Daily</Link>
