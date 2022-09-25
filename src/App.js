@@ -1,8 +1,3 @@
-import { Route, Routes } from "react-router-dom";
-import DailyPage from "./pages/Daily";
-import MonthlyPage from "./pages/Monthly";
-import WeeklyPage from "./pages/Weekly";
-import MainNavigation from "./components/layout/MainNavigation";
 import "./sass/styles.scss";
 import CardItem from "./components/cards/CardItem";
 import { useState } from "react";
@@ -74,25 +69,9 @@ function App() {
             onClick={changePeriod}>
             Monthly
           </span>
-          {/* <ul>
-          <li>
-            <Link to="/">Daily</Link>
-          </li>
-          <li>
-            <Link to="/weekly">Weekly</Link>
-          </li>
-          <li>
-            <Link to="/monthly">Monthly</Link>
-          </li>
-        </ul> */}
         </nav>
       </div>
       <CardItem period={period} />
-      {/* <Routes>
-        <Route path="/" element={<DailyPage />}></Route>
-        <Route path="/weekly" element={<WeeklyPage />}></Route>
-        <Route path="/monthly" element={<MonthlyPage />}></Route>
-      </Routes> */}
     </div>
   );
 }
