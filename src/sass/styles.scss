@@ -1,5 +1,6 @@
 //Variables
-
+$round-border: 15px;
+$global-padding: 2rem;
 // Primary
 
 $blue: hsl(246, 80%, 60%);
@@ -19,6 +20,5 @@ $pale-blue: hsl(236, 100%, 87%);
 $card-hover: hsl(236, 41%, 34%);
 
 @import "./partials/general";
-@import "./partials/layout";
 @import "./partials/userCard";
-@import "./partials/generalCard";
+@import "./partials/cards";

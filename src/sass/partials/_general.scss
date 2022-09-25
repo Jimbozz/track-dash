@@ -11,7 +11,10 @@ html {
 body {
   font-family: "Rubik", sans-serif;
   font-size: calc(13px + 0.3vw);
+  font-weight: 500;
   background-color: $very-dark-blue;
+  margin: 0px;
+  color: $desaturated-blue;
 }
 
 ul {
@@ -21,4 +24,31 @@ ul {
 a {
   text-decoration: none;
   color: white;
+}
+
+p {
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+
+  @media only screen and (min-width: 769px) {
+    display: flex;
+    flex-direction: row;
+    padding: 10rem 8rem;
+    gap: 2rem;
+    height: 100vh;
+  }
+}
+
+.period:hover {
+  color: $pale-blue;
+  cursor: pointer;
+}
+.active {
+  color: $pale-blue;
 }
