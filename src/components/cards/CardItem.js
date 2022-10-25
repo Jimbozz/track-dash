@@ -15,7 +15,6 @@ let iconsArray = [
   socialIcon,
   selfCareIcon,
 ];
-console.log(iconsArray);
 
 function CardItem(props) {
   let period = props.period;
